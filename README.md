@@ -1,28 +1,28 @@
-#ember-chrome-extension-template
-This repository is a template for an ember chrome extension to get you started with your chrome extension project!
+# ember-chrome-extension-template
+This repository is a template for a chrome extension written in Ember.js. It is intended to be cloned to make it easy for you to get started on your ember chrome extension!
 
 
-##Getting started
+## Getting started
 
-##Clone this repository
+### Clone this repository
 ```
 git clone https://github.com/woodgern/ember-chrome-extension-template.git
 ```
 
-##Install dependencies
+### Install dependencies
 Make sure you ave npm installed on your machine
 ```
 cd ember-chrome-extension-template
 npm install
 ```
 
-##Build your ember app
+### Build your ember app
 This automatically moves the packages to your extension directory
 ```
 ember serve
 ```
 
-##Add your chrome extension to your browser
+### Add your chrome extension to your browser
 Here you will need to navigate to `chrome://extensions` in your browser, make sure 'Developer mode' is on in the top right.
 
 Next, click 'Load unpacked' and select the `./ember-chrome-extension-template/chrome` folder
