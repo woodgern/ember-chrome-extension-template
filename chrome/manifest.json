@@ -1,0 +1,49 @@
+{
+  "name": "Ember Chrome Extension Template",
+  "short_name": "Ember Chrome Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A template chrome extension written in Ember.js",
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "icons": {
+    "16": "images/ember-logo.png",
+    "128": "images/ember-logo.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/ember-icon.png"
+    },
+    "default_title": "Ember",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://website/where-i-will-run-this-code/*"],
+      "css": ["assets/app.css"],
+      "js": [
+        "assets/app.js",
+        "content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-U8RAFWWM8OYfQb5qMYkdlc8s1J7H5LJBdGn2QpA+QLQ=' ; object-src 'self'",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "alarms",
+    "contextMenus",
+    "storage",
+    "notifications",
+    "idle",
+    "cookies",
+    "tabs",
+    "<all_urls>"
+  ]
+}
+

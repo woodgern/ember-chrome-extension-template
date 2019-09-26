@@ -1,0 +1,9 @@
+/tmp
+/node_modules
+/chrome/assets/*
+/dist
+/vendor
+.DS_Store
+
+*.swp
+*.swo

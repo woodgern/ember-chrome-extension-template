@@ -1,0 +1,3 @@
+/*
+	This is the default background script
+*/
